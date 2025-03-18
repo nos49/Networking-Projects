@@ -136,8 +136,5 @@ exit
 ## 🔹 Verification Commands
 ```
 show vlan brief         # Verify VLAN assignments 
-![VLAN Table](pictures/sw3-vlans.png)
 show running-config     # Check overall switch configuration
-![Running-configuration](pictures/sw1-show_run.png)
 show spanning-tree      # Verify STP status
-![STP](pictures/sw1-stp.png)
