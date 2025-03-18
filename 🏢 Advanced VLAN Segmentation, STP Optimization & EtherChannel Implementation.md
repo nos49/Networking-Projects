@@ -173,6 +173,6 @@ show spanning-tree      # Verify STP status
 ✅ LACP EtherChannel enhances bandwidth & redundancy.
 
 ## 📌 How to Use This Repository
-1️⃣ Open the provided Packet Tracer file:** [Click Here]([1. Advanced_VLAN_Segmentation_STP_Optimization_and_Ethernet_Channel_Implementation (2).pkt](https://github.com/nos49/Networking-Projects/blob/main/1.%20Advanced_VLAN_Segmentation_STP_Optimization_and_Ethernet_Channel_Implementation%20(2).pkt)).
+1️⃣ Open the provided Packet Tracer file: [Click Here](https://github.com/nos49/Networking-Projects/blob/main/1.%20Advanced_VLAN_Segmentation_STP_Optimization_and_Ethernet_Channel_Implementation%20(2).pkt)
 2️⃣ Follow the configuration steps to recreate the network.
 3️⃣ Modify the topology as needed for additional testing.
