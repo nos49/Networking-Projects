@@ -82,6 +82,7 @@ spanning-tree vlan 40 root secondary
 
 ## 🔹 EtherChannel Configuration (SW2)
 ![EtherChannel](pictures/sw2-etherchannel.png)
+
 Explanation: EtherChannel is implemented using LACP to bundle multiple physical links into one logical connection. This increases bandwidth and provides redundancy in case one link fails.
 ```
 enable
@@ -146,3 +147,9 @@ Explanation: These commands are used to verify that the VLANs, spanning tree, Et
 show vlan brief         # Verify VLAN assignments 
 show running-config     # Check overall switch configuration
 show spanning-tree      # Verify STP status
+```
+![VLAN Tables](pictures/sw3-vlans.png)
+
+![Running-Configuration](pictures/sw1-show_run.png)
+
+![STP](pictures/sw1-stp.png)
