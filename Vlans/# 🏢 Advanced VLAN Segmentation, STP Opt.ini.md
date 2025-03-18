@@ -1,7 +1,7 @@
 # 🏢 Advanced VLAN Segmentation, STP Optimization & EtherChannel Implementation
 
 ## 📌 Project Overview
-This project demonstrates the configuration of VLAN segmentation, Inter-VLAN routing, Rapid PVST (RPVST) for STP optimization, and LACP-based EtherChannel in a Layer 3 switch environment. The objective was to establish efficient network segmentation, prevent loops, and enhance network redundancy and bandwidth utilization.
+#### This project demonstrates the configuration of VLAN segmentation, Inter-VLAN routing, Rapid PVST (RPVST) for STP optimization, and LACP-based EtherChannel in a Layer 3 switch environment. The objective was to establish efficient network segmentation, prevent loops, and enhance network redundancy and bandwidth utilization.
 
 
 ## 🛠️ Technologies Used
@@ -15,7 +15,7 @@ This project demonstrates the configuration of VLAN segmentation, Inter-VLAN rou
 ![Network Topology](pictures/netdesign.png)
 
 Explanation: 
-This section describes the overall structure of the network, including the placement of switches and VLAN assignments. The topology ensures proper segmentation and communication between different VLANs.
+#### This section describes the overall structure of the network, including the placement of switches and VLAN assignments. The topology ensures proper segmentation and communication between different VLANs.
 ```
 Layer 3 Switch (SW1) is placed on the right side of the network and connects to SW2 via GigabitEthernet0/2.
 Layer 2 Switch (SW2) is positioned to the left of SW1 and connects via FastEthernet0/1.
@@ -27,7 +27,7 @@ VLAN Assignments:
 
 ## 🔹 SW2 Configuration
 ![VLAN Table](pictures/sw2-vlans.png)
-Explanation: SW2 is configured as the root bridge for the Rapid PVST spanning-tree protocol. The VLANs are assigned to specific ports to segregate network traffic and improve security. PortFast and BPDU Guard are enabled to place access ports into a forwarding state immediately while preventing possible loops if a switch is connected to an access port.
+#### Explanation: SW2 is configured as the root bridge for the Rapid PVST spanning-tree protocol. The VLANs are assigned to specific ports to segregate network traffic and improve security. PortFast and BPDU Guard are enabled to place access ports into a forwarding state immediately while preventing possible loops if a switch is connected to an access port.
 ```
 enable
 configure terminal
@@ -60,7 +60,7 @@ spanning-tree vlan 40 root primary
 
 ## 🔹 SW3 Configuration
 ![VLAN Table](pictures/sw3-vlans.png)
-Explanation: SW3 is configured as the secondary root bridge to provide redundancy. VLAN assignments are made to ensure proper connectivity between departments. Similar to SW2, PortFast and BPDU Guard are enabled to maintain network stability and speed up convergence.
+#### Explanation: SW3 is configured as the secondary root bridge to provide redundancy. VLAN assignments are made to ensure proper connectivity between departments. Similar to SW2, PortFast and BPDU Guard are enabled to maintain network stability and speed up convergence.
 ```
 enable
 configure terminal
@@ -94,7 +94,7 @@ spanning-tree vlan 40 root secondary
 ## 🔹 EtherChannel Configuration (SW2)
 ![EtherChannel](pictures/sw2-etherchannel.png)
 
-Explanation: EtherChannel is implemented using LACP to bundle multiple physical links into one logical connection. This increases bandwidth and provides redundancy in case one link fails.
+#### Explanation: EtherChannel is implemented using LACP to bundle multiple physical links into one logical connection. This increases bandwidth and provides redundancy in case one link fails.
 ```
 enable
 configure terminal
@@ -123,7 +123,7 @@ exit
 
 ## 🔹 Inter-VLAN Routing on SW1 (Layer 3 Switch)
 ![Routing Table](pictures/sw1-routing_table.png)
-Explanation: Inter-VLAN routing allows communication between different VLANs using Switched Virtual Interfaces (SVIs). The Layer 3 switch is configured to handle this routing, ensuring efficient packet forwarding between VLANs.
+#### Explanation: Inter-VLAN routing allows communication between different VLANs using Switched Virtual Interfaces (SVIs). The Layer 3 switch is configured to handle this routing, ensuring efficient packet forwarding between VLANs.
 ```
 enable
 configure terminal
@@ -153,7 +153,7 @@ exit
 ```
 
 ## 🔹 Verification Commands
-Explanation: These commands are used to verify that the VLANs, spanning tree, EtherChannel, and inter-VLAN routing configurations are correctly applied and functioning as expected.
+#### Explanation: These commands are used to verify that the VLANs, spanning tree, EtherChannel, and inter-VLAN routing configurations are correctly applied and functioning as expected.
 ```
 show vlan brief         # Verify VLAN assignments 
 show running-config     # Check overall switch configuration
