@@ -1,5 +1,16 @@
 # 🏢 Advanced VLAN Segmentation, STP Optimization & EtherChannel Implementation
 
+## 📌 Project Overview
+This project demonstrates the configuration of VLAN segmentation, Inter-VLAN routing, Rapid PVST (RPVST) for STP optimization, and LACP-based EtherChannel in a Layer 3 switch environment. The objective was to establish efficient network segmentation, prevent loops, and enhance network redundancy and bandwidth utilization.
+
+
+## 🛠️ Technologies Used
+🔹Cisco Layer 3 Switch for Inter-VLAN Routing
+🔹Layer 2 Switches for VLAN segmentation
+🔹RPVST (Rapid Per-VLAN Spanning Tree) for loop prevention and redundancy
+🔹LACP (Link Aggregation Control Protocol) for EtherChannel bundling
+🔹Packet Tracer for network simulation
+
 ## 📌 Network Topology Setup
 ![Network Topology](pictures/netdesign.png)
 
@@ -153,3 +164,15 @@ show spanning-tree      # Verify STP status
 ![Running-Configuration](pictures/sw1-show_run.png)
 
 ![STP](pictures/sw1-stp.png)
+
+
+## 🎯 Key Takeaways
+✅ Efficient VLAN segmentation improves network organization.
+✅ Layer 3 Inter-VLAN Routing provides seamless VLAN communication.
+✅ RPVST ensures fast convergence and network stability.
+✅ LACP EtherChannel enhances bandwidth & redundancy.
+
+## 📌 How to Use This Repository
+1️⃣ Open the provided Packet Tracer file:** [Click Here]([1. Advanced_VLAN_Segmentation_STP_Optimization_and_Ethernet_Channel_Implementation (2).pkt](https://github.com/nos49/Networking-Projects/blob/main/1.%20Advanced_VLAN_Segmentation_STP_Optimization_and_Ethernet_Channel_Implementation%20(2).pkt)).
+2️⃣ Follow the configuration steps to recreate the network.
+3️⃣ Modify the topology as needed for additional testing.
